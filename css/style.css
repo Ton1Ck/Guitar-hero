@@ -77,8 +77,8 @@ body {
 		font-size: 38px;
 	}
 }
-.page__categories {
-}
+.page__categories {}
+.page__why {}
 /*  @@@@ Header           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .header {
 	position: absolute;
@@ -319,8 +319,6 @@ body {
 	grid-template-columns: repeat(3, 1fr);
 	gap: 54px;
 }
-.body-store__item {}
-
 .item {
 	display: grid;
 }
@@ -399,8 +397,6 @@ justify-self: start;
 
 .categories__title {
 	margin-bottom: 80px;
-}
-.title {
 }
 .categories__items {
 	display: grid;
@@ -486,21 +482,108 @@ justify-self: start;
 	padding-bottom: 180px;
 }
 
-.brands {}
-
-.brands__container {}
 .brands__title {
 	margin-bottom: 75px;
 }
-.title {}
+
 .brands__items {
 	display: grid;
+	max-width: 1020px;
+	margin: 0 auto;
 	grid-template-columns: repeat(4,  auto);
 	justify-content: space-between;
 	align-items: center;
 	column-gap: 20px;
 	row-gap: 80px;
 }
-.brands__item {
-	display: grid;
+.brands__item img{
+	max-width: 100%;
 }
+@media (max-width:991.98px) {
+	.page__brands {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.brands__title {
+		margin-bottom: 40px;
+	}
+	.brands__items {
+		grid-template-columns: repeat(3,  auto);
+		row-gap: 50px;
+	}
+}
+@media (max-width:767.98px) {
+	.page__brands {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+@media (max-width:600px){
+	.brands__items {
+		row-gap: 20px;
+		grid-template-columns: repeat(2,  auto);
+		justify-content: center;
+	}
+	.brands__title {
+		margin-bottom: 20px;
+	}
+}
+/* WHY !!!!!!!!!!!!!!!!!!!!*/
+
+
+.why {
+	background-color: #121212;
+	padding-bottom: 90px;
+	padding-top: 90px;
+}
+.why__container {}
+.why__title {
+	margin-bottom: 35px;
+	color: #fff;
+}
+.why__items {
+	display: grid;
+	grid-template-columns: repeat(3,auto);
+	justify-content: space-between;
+	gap: 30px;
+}
+.why__item {}
+
+.item-why {
+	display: grid;
+	justify-items: center;
+	padding: 40px;
+	text-align: center;
+}
+.item-why__icon {
+	border-radius: 20px;
+	background: #262626;
+	display: flex;
+	width: 72px;
+	height: 72px;
+	justify-content: center;
+	align-items: center;
+}
+.item-why__icon:not(:last-child){
+	margin-bottom: 40px;
+}
+.item-why__title {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.5;
+	letter-spacing: 0.08em;
+	color: #fff;
+}
+.item-why__title:not(:last-child){
+	margin-bottom: 12px;
+}
+.item-why__text {
+	font-weight: 400;
+font-size: 14px;
+line-height: 1.5;
+text-align: center;
+text-transform: capitalize;
+}
+
+
