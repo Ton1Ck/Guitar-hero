@@ -77,8 +77,7 @@ body {
 		font-size: 38px;
 	}
 }
-.page__categories {}
-.page__why {}
+
 /*  @@@@ Header           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .header {
 	position: absolute;
@@ -536,7 +535,7 @@ justify-self: start;
 	padding-bottom: 90px;
 	padding-top: 90px;
 }
-.why__container {}
+
 .why__title {
 	margin-bottom: 35px;
 	color: #fff;
@@ -547,7 +546,6 @@ justify-self: start;
 	justify-content: space-between;
 	gap: 30px;
 }
-.why__item {}
 
 .item-why {
 	display: grid;
@@ -580,10 +578,108 @@ justify-self: start;
 }
 .item-why__text {
 	font-weight: 400;
-font-size: 14px;
-line-height: 1.5;
-text-align: center;
-text-transform: capitalize;
+	font-size: 14px;
+	line-height: 1.5;
+	text-align: center;
+	text-transform: capitalize;
 }
 
+@media (max-width:991.98px) {
+	.why {
+		padding-bottom: 50px;
+		padding-top: 50px;
+	}
+	.why__items{
+		grid-template-columns: repeat(2,auto);
+		
+	}
+}
+@media (max-width:767.98px){
+	.why {
+		padding-bottom: 30px;
+		padding-top: 30px;
+	}
+	.why__items{
+		justify-content: stretch; /* Равномерно распределение по ширине flex блока  */
+		grid-template-columns: repeat(1,auto);
+	}
+	.item-why{
+		padding: 20px;
+	}
+}
+
+/*  REVIEWS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+.reviews {
+	padding-bottom: 240px;
+	padding-top: 240px;
+}
+.reviews__container {}
+.reviews__title {
+	margin-bottom: 100px;
+}
+.reviews__swiper {}
+
+.swiper-reviews {}
+
+.swiper-reviews__wrapper {}
+
+.swiper-reviews__slide {
+	
+}
+.slide-swiper-reviews {
+	display: flex;
+}
+
+.slide-swiper-reviews__image {
+	flex: 0 1 50%;
+}
+.slide-swiper-reviews__body {
+	flex: 0 1 50%;
+}
+.slide-swiper-reviews__text {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 160%;
+}
+.slide-swiper-reviews__text:not(:last-child){
+	margin-bottom: 56px;
+}
+.slide-swiper-reviews__author {
+
+}
+.slide-swiper-reviews__name {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 160%;
+	color: #000000;
+}
+.slide-swiper-reviews__position {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 160%;
+	color: #868686;
+}
+.swiper-reviews__pagination {
+}
+
+@media (max-width:991.98px){
+	.reviews {
+		padding-bottom: 80px;
+		padding-top: 80px;
+	}
+	.reviews__title {
+		margin-bottom: 50px;
+	}
+}
+@media (max-width:767.98px){
+	.reviews {
+		padding-bottom: 30px;
+		padding-top: 30px;
+	}
+	.reviews__title {
+		margin-bottom: 30px;
+	}
+}
 
